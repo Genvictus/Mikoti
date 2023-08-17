@@ -1,38 +1,5 @@
 const print = @import("std").debug.print;
 
-// pub fn addi8(a: i8, b: i8) (i8, i8) {
-//     // #NoLooping, but too lazy to think
-//     var res: i32 = 0;
-//     var carry: i32 = 0;
-
-//     var shcarry: i32 = 0;
-//     // #1 iteration: 1st LSByte
-//     carry = a & b;
-//     res = a ^ b;
-
-//     shcarry = carry << 1;
-//     carry = res & shcarry;
-//     res = res ^ shcarry;
-//     shcarry = carry << 1;
-//     carry = res & shcarry;
-//     res = res ^ shcarry;
-//     shcarry = carry << 1;
-//     carry = res & shcarry;
-//     res = res ^ shcarry;
-//     shcarry = carry << 1;
-//     carry = res & shcarry;
-//     res = res ^ shcarry;
-//     shcarry = carry << 1;
-//     carry = res & shcarry;
-//     res = res ^ shcarry;
-//     shcarry = carry << 1;
-//     carry = res & shcarry;
-//     res = res ^ shcarry;
-//     shcarry = carry << 1;
-//     carry = res & shcarry;
-//     res = res ^ shcarry;
-// }
-
 pub fn addi32(a: i32, b: i32) i32 {
     // #NoLooping, but too lazy to think
     var res: i32 = 0;
